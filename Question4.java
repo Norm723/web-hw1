@@ -1,3 +1,4 @@
+package temp;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
@@ -24,13 +25,13 @@ public class Question4 {
 			int modeNumber = i % 3;
 			switch (modeNumber) {
 			case 0:
-				file.write("\t\t\t\t\t"+"<td style=\"height: 100vh;background-color: blue;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t"+"<td style=\"background-color: blue;\"></td>"+"\r\n");
 				break;
 			case 1:
-				file.write("\t\t\t\t\t"+"<td style=\"height: 100vh;background-color:red;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t"+"<td style=\"background-color: red;\"></td>"+"\r\n");
 				break;
 			case 2:
-				file.write("\t\t\t\t\t"+"<td style=\"height: 100vh;background-color: green;\"></td>"+"\r\n");
+				file.write("\t\t\t\t\t"+"<td style=\"background-color: green;\"></td>"+"\r\n");
 				break;
 			default:
 				break;
@@ -45,7 +46,12 @@ public class Question4 {
 				"<head>\r\n\t\t" + 
 				"<title>\r\n\t\t\t" + 
 				"question4\r\n\t\t" + 
-				"</title>\r\n\t" + 
+				"</title>\r\n\t\t" +
+				"<style>\r\n\t\t\t" + 
+				"td {\r\n\t\t\t\t" +
+				"height: 100vh\r\n\t\t\t" +
+				"}\r\n\t\t" +
+				"</style>\r\n\t" +
 				"</head>\r\n\t" + 
 				"<body style=\"overflow:hidden;margin:0;\">\r\n\t\t" + 
 				"<table style=\"width: 100%; border-collapse: collapse;\">\r\n\t\t\t" + 

@@ -13,18 +13,7 @@ public class Question4 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("please insert a number between 1-50");
 		String inputNum = sc.next();
-		int numCol = 0;
-		try {
-			numCol = Integer.parseInt(inputNum);
-			if(numCol > 50 || numCol <1) {
-				System.out.println("invalid number");
-				sc.close();
-				return;
-			}
-		}catch (NumberFormatException e) {
-			System.out.println("invalid number");
-			return;
-		}
+		int numCol = Integer.parseInt(inputNum);
 		drawColumns(numCol);
 		lastPart();
 		file.close();

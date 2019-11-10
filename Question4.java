@@ -13,8 +13,7 @@ public class Question4 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("please insert a number between 1-50");
 		String inputNum = sc.next();
-		int numCol = Integer.parseInt(inputNum);
-		drawColumns(numCol);
+		drawColumns(Integer.parseInt(inputNum));
 		lastPart();
 		file.close();
 		sc.close();
@@ -33,7 +32,6 @@ public class Question4 {
 			case 2:
 				file.write("\t\t\t\t\t"+"<td style=\"height: 100vh;background-color: green;\"></td>"+"\r\n");
 				break;
-
 			default:
 				break;
 			}
@@ -75,7 +73,4 @@ public class Question4 {
 		}
 
 	}
-
-
-
 }
